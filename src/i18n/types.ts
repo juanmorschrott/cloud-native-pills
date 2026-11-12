@@ -28,6 +28,8 @@ export interface UIStrings {
       terraform: string;
       python: string;
       observability: string;
+      security: string;
+      cicd: string;
       cncf: string;
       "system-design": string;
     };

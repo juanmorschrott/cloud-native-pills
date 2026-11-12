@@ -33,6 +33,8 @@ export default {
       terraform: "Terraform",
       python: "Python",
       observability: "Observability",
+      security: "Security",
+      cicd: "CI/CD",
       "system-design": "System design",
       cncf: "CNCF",
     },
@@ -51,7 +53,7 @@ export default {
     allPosts: "All pills",
     heroTitle: "$ learn --random",
     heroIntro:
-      "Bite-sized pills (5 minutes or less) on AWS, Terraform, Python, observability and system design.",
+      "Bite-sized pills (5 minutes or less) on AWS, Terraform, Python, observability, security, CI/CD and system design.",
     heroSub:
       "Topics are picked at random to push me out of my comfort zone. Learn, practice, repeat.",
   },

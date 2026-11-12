@@ -33,6 +33,8 @@ export default {
       terraform: "Terraform",
       python: "Python",
       observability: "Observabilidad",
+      security: "Seguridad",
+      cicd: "CI/CD",
       "system-design": "Diseño de sistemas",
       cncf: "CNCF",
     },
@@ -51,7 +53,7 @@ export default {
     allPosts: "Todas las píldoras",
     heroTitle: "$ learn --random",
     heroIntro:
-      "Píldoras breves (5 minutos o menos) sobre AWS, Terraform, Python, observabilidad y diseño de sistemas.",
+      "Píldoras breves (5 minutos o menos) sobre AWS, Terraform, Python, observabilidad, seguridad, CI/CD y diseño de sistemas.",
     heroSub:
       "Los temas se eligen al azar para sacarme de mi zona de confort. Aprender, practicar, repetir.",
   },

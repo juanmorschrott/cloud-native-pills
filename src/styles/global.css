@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./typography.css";
+@import "rehype-callouts/theme/obsidian";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@layer base {
+  * {
+    @apply border-border outline-accent/75;
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-muted) transparent;
+  }
+  a,
+  button,
+  #main-content {
+    @apply outline-accent outline-offset-1 focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@utility max-w-app {
+  @apply max-w-3xl;
+}
+
+@utility app-layout {
+  @apply max-w-app mx-auto w-full px-4;
+}
+
+@utility active-nav {
+  @apply underline decoration-wavy decoration-2 underline-offset-8;
+}
+
+:target {
+  scroll-margin-block: 1rem;
+}
+
+/* ===== Retro-digital touches ===== */
+@layer base {
+  /* Faint CRT scanlines, dark theme only */
+  [data-theme="dark"] body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 40;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 2px,
+      rgb(0 0 0 / 0.14) 3px
+    );
+  }
+
+  .app-prose h2::before {
+    content: "## ";
+    @apply text-accent opacity-70;
+  }
+
+  .app-prose h3::before {
+    content: "### ";
+    @apply text-accent opacity-70;
+  }
+
+  .app-prose pre {
+    @apply border-border rounded-md border;
+  }
+
+  [data-theme="dark"] .app-prose pre {
+    box-shadow:
+      0 0 0 1px rgb(0 173 216 / 0.08),
+      0 0 24px rgb(0 173 216 / 0.06);
+  }
+
+  .app-prose :not(pre) > code {
+    @apply bg-muted rounded px-1.5 py-0.5 font-normal;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  .lang-switch {
+    @apply border-border rounded border px-2 py-0.5 text-xs font-semibold tracking-wider;
+
+    &:hover {
+      @apply border-accent text-accent;
+    }
+  }
+
+  .pill-meta {
+    @apply tracking-wide uppercase;
+  }
+
+  .cursor-blink {
+    animation: blink 1.1s steps(1) infinite;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink {
+    animation: none;
+  }
+}

@@ -6,7 +6,7 @@ export default defineAstroPaperConfig({
     title: "cloud-native-pills",
     description:
       "Bite-sized pills (≤5 min) on Kubernetes, Go, Terraform/AWS, CNCF and system design.",
-    author: "Juan Morschrott",
+    author: "Juan Andrés Moreno Schrott",
     profile: "https://github.com/juanmorschrott",
     ogImage: "default-og.jpg",
     lang: "en",
@@ -31,7 +31,7 @@ export default defineAstroPaperConfig({
   },
   socials: [
     { name: "github",   url: "https://github.com/juanmorschrott" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/CHANGE-ME/" },
+    { name: "linkedin", url: "https://www.linkedin.com/in/juan-andres-moreno-schrott/" },
   ],
   shareLinks: [
     { name: "linkedin", url: "https://www.linkedin.com/sharing/share-offsite/?url=" },

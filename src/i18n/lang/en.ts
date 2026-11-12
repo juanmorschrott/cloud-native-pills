@@ -29,11 +29,12 @@ export default {
       advanced: "Advanced",
     },
     categories: {
-      cncf: "CNCF",
+      aws: "AWS",
+      terraform: "Terraform",
+      python: "Python",
+      observability: "Observability",
       "system-design": "System design",
-      go: "Go",
-      "aws-terraform": "AWS + Terraform",
-      kubernetes: "Kubernetes",
+      cncf: "CNCF",
     },
     discussOnLinkedin: "Discuss on LinkedIn",
     readInOtherLanguage: "Leer en español",
@@ -50,7 +51,7 @@ export default {
     allPosts: "All pills",
     heroTitle: "$ learn --random",
     heroIntro:
-      "Bite-sized pills (5 minutes or less) on Kubernetes, Go, Terraform/AWS, CNCF projects and system design.",
+      "Bite-sized pills (5 minutes or less) on AWS, Terraform, Python, observability and system design.",
     heroSub:
       "Topics are picked at random to push me out of my comfort zone. Learn, practice, repeat.",
   },

@@ -1,6 +1,6 @@
 # cloud-native-pills
 
-Bite-sized pills (≤ 5 min read) on Kubernetes, Go, Terraform/AWS, CNCF projects and system design. Bilingual (EN/ES). Built with [Astro](https://astro.build) + [AstroPaper](https://github.com/satnaing/astro-paper), deployed to GitHub Pages.
+Bite-sized pills (≤ 5 min read) on AWS, Terraform, Python, observability and system design. Bilingual (EN/ES). Built with [Astro](https://astro.build) + [AstroPaper](https://github.com/satnaing/astro-paper), deployed to GitHub Pages.
 
 Live: https://juanmorschrott.github.io/cloud-native-pills/
 
@@ -13,8 +13,8 @@ Live: https://juanmorschrott.github.io/cloud-native-pills/
 Code blocks support file names and highlights:
 
 ````md
-```go file="main.go"
-fmt.Println("hi") // [!code highlight]
+```python file="main.py"
+print("hi")  # [!code highlight]
 ```
 ````
 

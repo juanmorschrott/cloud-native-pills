@@ -17,7 +17,7 @@ const posts = defineCollection({
       draft: z.boolean().optional(),
       tags: z.array(z.string()).default(["others"]),
       category: z
-        .enum(["cncf", "system-design", "go", "aws-terraform", "kubernetes"])
+        .enum(["aws", "terraform", "python", "observability", "system-design", "cncf"])
         .optional(),
       level: z.enum(["intro", "intermediate", "advanced"]).optional(),
       readingTime: z.number().int().min(1).max(5).optional(),

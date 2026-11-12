@@ -4,8 +4,8 @@ description: "One-sentence summary shown in lists, search and social cards."
 pubDatetime: 2026-01-01T09:00:00+01:00
 draft: true
 tags: [tag-one, tag-two]
-# cncf | system-design | go | aws-terraform | kubernetes
-category: cncf
+# aws | terraform | python | observability | system-design | cncf
+category: aws
 # intro | intermediate | advanced
 level: intro
 # 1-5 minutes

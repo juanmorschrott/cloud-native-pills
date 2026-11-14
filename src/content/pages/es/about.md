@@ -10,4 +10,4 @@ Este blog es mi gimnasio de aprendizaje: píldoras breves (5 minutos o menos) so
 ## Dónde encontrarme
 
 - [GitHub](https://github.com/juanmorschrott)
-- LinkedIn (enlace en el pie de página)
+- [LinkedIn](https://www.linkedin.com/in/juan-andres-moreno-schrott/)

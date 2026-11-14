@@ -10,4 +10,4 @@ This blog is my learning gym: short pills (5 minutes or less) on **AWS, Terrafor
 ## Find me
 
 - [GitHub](https://github.com/juanmorschrott)
-- LinkedIn (link in the footer)
+- [LinkedIn](https://www.linkedin.com/in/juan-andres-moreno-schrott/)

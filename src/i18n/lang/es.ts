@@ -3,9 +3,9 @@ import type { UIStrings } from "../types";
 export default {
   nav: {
     home: "Inicio",
-    posts: "Píldoras",
-    tags: "Etiquetas",
-    about: "Sobre mí",
+    posts: "Pills",
+    tags: "Tags",
+    about: "About",
     archives: "Archivo",
     search: "Buscar",
   },
@@ -15,7 +15,7 @@ export default {
     sharePostIntro: "Comparte esta píldora:",
     sharePostOn: "Compartir en {{platform}}",
     sharePostViaEmail: "Compartir por correo",
-    tagLabel: "Etiquetas",
+    tagLabel: "Tags",
     backToTop: "Volver arriba",
     tableOfContents: "Índice",
     goBack: "Volver",
@@ -62,13 +62,13 @@ export default {
     allRightsReserved: "Todos los derechos reservados.",
   },
   pages: {
-    tagTitle: "Etiqueta",
+    tagTitle: "Tag",
     tagDesc: "Todos los artículos con la etiqueta",
 
-    tagsTitle: "Etiquetas",
+    tagsTitle: "Tags",
     tagsDesc: "Todas las etiquetas usadas en las píldoras.",
 
-    postsTitle: "Píldoras",
+    postsTitle: "Pills",
     postsDesc: "Todas las píldoras publicadas.",
 
     archivesTitle: "Archivo",

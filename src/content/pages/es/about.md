@@ -1,5 +1,5 @@
 ---
-title: "Sobre mí"
+title: "About"
 description: "Quién escribe cloud-native-pills y por qué."
 ---
 

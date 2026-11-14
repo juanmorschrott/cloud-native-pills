@@ -23,18 +23,18 @@ snapshot to see how this constantly changing technology evolves.
 ## Where everything lives
 
 ```text
-<project-root-folder>/                      # the project
-├── AGENTS.md                               # instructions for any agent working here
-└── docs/specs/blog.md                      # the spec: what to build and why
+<project-root-folder>/        # the project
+├── AGENTS.md                 # instructions for any agent working here
+└── docs/specs/blog.md        # the spec: what to build and why
 
-~/.agents/skills/                           # reusable skills, shared across projects
+~/.agents/skills/             # reusable skills, shared across projects
 ├── find-skills/
 └── show-me/
 
-~/.<agent-folder>/                          # the agent's memory (depends on the tool)
-├── checkpoints/                            # summaries of what was done and decided
-├── files/                                  # artifacts that don't belong in git
-└── research/                               # notes gathered while investigating
+~/.<agent-folder>/            # the agent's memory (depends on the tool)
+├── checkpoints/              # summaries of what was done and decided
+├── files/                    # artifacts that don't belong in git
+└── research/                 # notes gathered while investigating
 ```
 
 ## What each piece is

@@ -22,18 +22,18 @@ instantánea fechada para ver cómo evoluciona una tecnología que cambia consta
 ## Dónde vive cada cosa
 
 ```text
-<project-root-folder>/                      # el proyecto
-├── AGENTS.md                               # instrucciones para cualquier agente
-└── docs/specs/blog.md                      # la spec: qué se quiere construir y por qué
+<project-root-folder>/        # el proyecto
+├── AGENTS.md                 # instrucciones para cualquier agente
+└── docs/specs/blog.md        # la spec: qué se quiere construir y por qué
 
-~/.agents/skills/                           # skills reutilizables, compartidas entre proyectos
+~/.agents/skills/             # skills reutilizables, compartidas entre proyectos
 ├── find-skills/
 └── show-me/
 
-~/.<agent-folder>/                          # la memoria del agente (según la herramienta)
-├── checkpoints/                            # resúmenes de lo hecho y decidido
-├── files/                                  # artefactos que no van a git
-└── research/                               # notas de investigación
+~/.<agent-folder>/            # la memoria del agente (según la herramienta)
+├── checkpoints/              # resúmenes de lo hecho y decidido
+├── files/                    # artefactos que no van a git
+└── research/                 # notas de investigación
 ```
 
 ## Qué es cada pieza

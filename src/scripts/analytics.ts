@@ -12,7 +12,7 @@ function storedConsent(): string | null {
   }
 }
 
-function startAnalytics(id: string) {
+function startAnalytics(id: string | undefined, tagManagerId: string) {
   if (analyticsStarted) return;
   analyticsStarted = true;
   window.dataLayer = window.dataLayer || [];
@@ -20,14 +20,25 @@ function startAnalytics(id: string) {
     window.dataLayer.push(args);
   };
   window.gtag("js", new Date());
-  window.gtag("config", id, { send_page_view: false });
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
-  document.head.appendChild(script);
+  if (id) {
+    window.gtag("config", id, { send_page_view: false });
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
+    document.head.appendChild(script);
+  }
+  window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+  const tagManagerScript = document.createElement("script");
+  tagManagerScript.async = true;
+  tagManagerScript.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(tagManagerId)}`;
+  document.head.appendChild(tagManagerScript);
 }
 
-function pageView(id: string) {
+function pageView(id: string | undefined) {
+  if (!id) {
+    previousPage = location.href;
+    return;
+  }
   window.gtag?.("event", "page_view", {
     send_to: id,
     page_location: location.href,
@@ -44,12 +55,13 @@ function setupPage() {
     "#analytics-settings"
   );
   const id = root?.dataset.measurementId;
-  if (!root || !prompt || !settings || !id) return;
+  const tagManagerId = root?.dataset.tagManagerId;
+  if (!root || !prompt || !settings || !tagManagerId) return;
 
   const consent = storedConsent();
   prompt.hidden = consent === "accept" || consent === "reject";
   if (consent === "accept") {
-    startAnalytics(id);
+    startAnalytics(id, tagManagerId);
     pageView(id);
   }
   settings.addEventListener("click", () => {
@@ -74,7 +86,7 @@ function setupPage() {
         }
         prompt.hidden = true;
         if (choice === "accept" && !analyticsStarted) {
-          startAnalytics(id);
+          startAnalytics(id, tagManagerId);
           pageView(id);
         }
       });

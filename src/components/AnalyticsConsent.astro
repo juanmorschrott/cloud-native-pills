@@ -1,12 +1,16 @@
 ---
 import { useTranslations } from "@/i18n";
 
-type Props = { measurementId: string };
-const { measurementId } = Astro.props;
+type Props = { measurementId?: string; tagManagerId: string };
+const { measurementId, tagManagerId } = Astro.props;
 const t = useTranslations(Astro.currentLocale).analytics;
 ---
 
-<div id="analytics-consent" data-measurement-id={measurementId}>
+<div
+  id="analytics-consent"
+  data-measurement-id={measurementId}
+  data-tag-manager-id={tagManagerId}
+>
   <div
     id="analytics-prompt"
     class="bg-background border-border fixed right-4 bottom-4 left-4 z-50 mx-auto max-w-xl rounded border p-4 shadow-lg"

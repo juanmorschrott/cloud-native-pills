@@ -1,4 +1,11 @@
 export interface UIStrings {
+  analytics: {
+    title: string;
+    description: string;
+    accept: string;
+    reject: string;
+    settings: string;
+  };
   nav: {
     home: string;
     posts: string;

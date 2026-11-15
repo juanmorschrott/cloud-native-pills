@@ -2,6 +2,12 @@
 import { Font } from "astro:assets";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { ClientRouter } from "astro:transitions";
+import {
+  PUBLIC_GA_MEASUREMENT_ID,
+  PUBLIC_ADSENSE_CLIENT,
+  PUBLIC_ADSENSE_ENABLED,
+} from "astro:env/client";
+import AnalyticsConsent from "@/components/AnalyticsConsent.astro";
 import { resolveDefaultOgImagePath } from "@/utils/resolveDefaultOgImagePath";
 import { getAssetPath } from "@/utils/withBase";
 import config from "@/config";
@@ -15,6 +21,17 @@ type Props = {
 };
 
 const { site } = config;
+const analyticsId = PUBLIC_GA_MEASUREMENT_ID?.trim();
+const adsenseClient = PUBLIC_ADSENSE_CLIENT?.trim();
+if (analyticsId && !/^G-[A-Z0-9]+$/.test(analyticsId)) {
+  throw new Error("Invalid PUBLIC_GA_MEASUREMENT_ID");
+}
+if (adsenseClient && !/^ca-pub-\d{16}$/.test(adsenseClient)) {
+  throw new Error("Invalid PUBLIC_ADSENSE_CLIENT");
+}
+if (PUBLIC_ADSENSE_ENABLED === "true" && !adsenseClient) {
+  throw new Error("PUBLIC_ADSENSE_ENABLED requires PUBLIC_ADSENSE_CLIENT");
+}
 
 const {
   title = site.title,
@@ -43,6 +60,21 @@ const rssHref = getRelativeLocaleUrl(
     <link rel="icon" href={getAssetPath("favicon.ico")} />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
+    {
+      adsenseClient && (
+        <meta name="google-adsense-account" content={adsenseClient} />
+      )
+    }
+    {
+      PUBLIC_ADSENSE_ENABLED === "true" && adsenseClient && (
+        <script
+          is:inline
+          async
+          crossorigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+        />
+      )
+    }
 
     <!-- Font -->
     <Font
@@ -120,6 +152,7 @@ const rssHref = getRelativeLocaleUrl(
     class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col"
   >
     <slot />
+    {analyticsId && <AnalyticsConsent measurementId={analyticsId} />}
     <script>
       import "@/scripts/theme";
     </script>

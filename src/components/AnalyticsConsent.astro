@@ -1,0 +1,38 @@
+---
+import { useTranslations } from "@/i18n";
+
+type Props = { measurementId: string };
+const { measurementId } = Astro.props;
+const t = useTranslations(Astro.currentLocale).analytics;
+---
+
+<div id="analytics-consent" data-measurement-id={measurementId}>
+  <div
+    id="analytics-prompt"
+    class="bg-background border-border fixed right-4 bottom-4 left-4 z-50 mx-auto max-w-xl rounded border p-4 shadow-lg"
+    role="region"
+    aria-label={t.title}
+    hidden
+  >
+    <p>{t.description}</p>
+    <div class="mt-3 flex flex-wrap gap-3">
+      <button
+        type="button"
+        data-analytics-choice="accept"
+        class="border-border rounded border px-3 py-1">{t.accept}</button
+      >
+      <button
+        type="button"
+        data-analytics-choice="reject"
+        class="border-border rounded border px-3 py-1">{t.reject}</button
+      >
+    </div>
+  </div>
+  <button type="button" id="analytics-settings" class="mx-auto mb-4 underline"
+    >{t.settings}</button
+  >
+</div>
+
+<script>
+  import "@/scripts/analytics";
+</script>

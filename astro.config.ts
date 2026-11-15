@@ -24,7 +24,6 @@ import config from "./astro-paper.config";
 
 export default defineConfig({
   site: config.site.url,
-  base: "/cloud-native-pills",
   trailingSlash: "ignore",
   integrations: [
     mdx(),

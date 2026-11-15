@@ -11,7 +11,7 @@ readingTime: 2
 ## Overview
 
 After experimenting with several projects built with AI, I've gathered the key elements of what is known as
-*harness engineering*, which consists of setting a series of guidelines and limits for AI agents
+_harness engineering_, which consists of setting a series of guidelines and limits for AI agents
 so they can develop autonomously with a minimum degree of "determinism".
 
 From instructions you don't want to keep repeating in prompts, such as "Act as a senior Java developer",

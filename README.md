@@ -2,7 +2,7 @@
 
 Bite-sized pills (≤ 5 min read) on AWS, Terraform, Python, observability and system design. Bilingual (EN/ES). Built with [Astro](https://astro.build) + [AstroPaper](https://github.com/satnaing/astro-paper), deployed to GitHub Pages.
 
-Live: https://juanmorschrott.github.io/cloud-native-pills/
+Live: https://cloudnativepills.com/
 
 ## Writing a pill
 
@@ -22,7 +22,7 @@ print("hi")  # [!code highlight]
 
 ```bash
 pnpm install
-pnpm dev      # http://localhost:4321/cloud-native-pills/
+pnpm dev      # http://localhost:4321/
 pnpm build    # type-check + build + search index
 ```
 
@@ -54,11 +54,9 @@ manage advertising consent. AdSense also requires Google approval and Auto ads
 enabled in the account. Google may provide other site-verification methods
 while the account is being set up.
 
-Google recommends an `ads.txt` file at the domain root. This project is
-published under `/cloud-native-pills/`, so a file added to `public/` here would
-not appear at `https://juanmorschrott.github.io/ads.txt`. If needed, publish
-Google's account-specific file through the separate GitHub Pages site that
-controls that root.
+Google recommends an `ads.txt` file at the domain root. If needed, add Google's
+account-specific file as `public/ads.txt` so it is published at
+`https://cloudnativepills.com/ads.txt`.
 
 Standard Google Analytics and AdSense are free to use; Analytics 360 and some
 third-party CMPs may have costs. AdSense earnings and approval are not guaranteed.

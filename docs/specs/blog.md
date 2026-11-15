@@ -15,7 +15,7 @@ Topics are suggested at random to push me out of my comfort zone. The author wri
 
 - Bilingual: English and Spanish, same slug in both languages.
 - Posts are Markdown files with frontmatter (`level`, `readingTime`, `tags`, optional `category`, `linkedin`).
-- Hosted on GitHub Pages, free `github.io` URL.
+- Hosted on GitHub Pages at `https://cloudnativepills.com/`.
 - Publishing is automatic: every push to `main` triggers a GitHub Actions deploy.
 - Design: minimalist, digital, slightly retro. Source code must look great.
 - Accent color taken from a stack technology.

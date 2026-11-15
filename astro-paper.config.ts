@@ -2,7 +2,7 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://juanmorschrott.github.io",
+    url: "https://cloudnativepills.com",
     title: "cloud-native-pills",
     description:
       "Bite-sized pills (≤5 min) on AWS, Terraform, Python, observability and system design.",

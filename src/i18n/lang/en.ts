@@ -1,6 +1,14 @@
 import type { UIStrings } from "../types";
 
 export default {
+  analytics: {
+    title: "Analytics privacy",
+    description:
+      "May we use Google Analytics cookies to understand how this blog is used? Your choice applies only to analytics and can be changed at any time.",
+    accept: "Accept analytics",
+    reject: "Reject analytics",
+    settings: "Analytics settings",
+  },
   nav: {
     home: "Home",
     posts: "Pills",

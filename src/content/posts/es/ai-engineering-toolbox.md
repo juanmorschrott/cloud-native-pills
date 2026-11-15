@@ -11,7 +11,7 @@ readingTime: 2
 ## Descripción
 
 Tras experimentar con varios proyectos hechos con IA, he recopilado los elementos clave de lo que se
-conoce como *harness engineering*, que consiste en establecer una serie de guías y límites para agentes de IA, con el fin de poder desarrollar de forma autónoma con un mínimo grado de "determinismo".
+conoce como _harness engineering_, que consiste en establecer una serie de guías y límites para agentes de IA, con el fin de poder desarrollar de forma autónoma con un mínimo grado de "determinismo".
 
 Desde instrucciones que no quieres estar repitiendo continuamente en los prompts, como "Actúa como un
 developer senior Java", hasta especificaciones por implementar (specs), dejo desgranados los elementos básicos.

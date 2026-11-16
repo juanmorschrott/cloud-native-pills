@@ -31,14 +31,9 @@ export interface UIStrings {
     minRead: string;
     levels: { intro: string; intermediate: string; advanced: string };
     categories: {
-      aws: string;
-      terraform: string;
-      python: string;
+      go: string;
+      kubernetes: string;
       observability: string;
-      security: string;
-      cicd: string;
-      cncf: string;
-      "system-design": string;
     };
     discussOnLinkedin: string;
     readInOtherLanguage: string;

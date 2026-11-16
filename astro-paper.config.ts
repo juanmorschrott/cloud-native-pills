@@ -5,7 +5,7 @@ export default defineAstroPaperConfig({
     url: "https://cloudnativepills.com",
     title: "cloud-native-pills",
     description:
-      "Bite-sized pills (≤5 min) on AWS, Terraform, Python, observability and system design.",
+      "Bite-sized pills (≤5 min) on Go, Kubernetes and observability, especially OpenTelemetry.",
     author: "Juan Andrés Moreno Schrott",
     profile: "https://github.com/juanmorschrott",
     ogImage: "default-og.jpg",

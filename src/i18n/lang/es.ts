@@ -37,14 +37,9 @@ export default {
       advanced: "Avanzado",
     },
     categories: {
-      aws: "AWS",
-      terraform: "Terraform",
-      python: "Python",
+      go: "Go",
+      kubernetes: "Kubernetes",
       observability: "Observabilidad",
-      security: "Seguridad",
-      cicd: "CI/CD",
-      "system-design": "Diseño de sistemas",
-      cncf: "CNCF",
     },
     discussOnLinkedin: "Comenta en LinkedIn",
     readInOtherLanguage: "Read in English",
@@ -59,11 +54,11 @@ export default {
     featured: "Destacadas",
     recentPosts: "Últimas píldoras",
     allPosts: "Todas las píldoras",
-    heroTitle: "$ learn --random",
+    heroTitle: "$ learn --cloud-native",
     heroIntro:
-      "Píldoras breves (5 minutos o menos) sobre AWS, Terraform, Python, observabilidad, seguridad, CI/CD y diseño de sistemas.",
+      "Píldoras breves (5 minutos o menos) sobre Go, Kubernetes y observabilidad, especialmente OpenTelemetry.",
     heroSub:
-      "Los temas se eligen al azar para sacarme de mi zona de confort. Aprender, practicar, repetir.",
+      "Ideas concretas del ecosistema cloud native, contadas en pequeñas dosis.",
   },
   footer: {
     copyright: "Copyright",

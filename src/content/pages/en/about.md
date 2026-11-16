@@ -5,7 +5,7 @@ description: "Who writes cloud-native-pills and why."
 
 I'm Juan, a Cloud Engineer passionate about open source and the CNCF ecosystem.
 
-This blog is my learning gym: short pills (5 minutes or less) on **AWS, Terraform, Python (FastAPI), observability and system design**. The topics are picked at random to force me to learn things I don't master yet, and every pill is published in English and Spanish.
+This blog brings together short pills (5 minutes or less) on **Go, Kubernetes and observability**, especially OpenTelemetry. I focus on these topics because they interest me most in the cloud-native ecosystem. Every pill is published in English and Spanish.
 
 ## Find me
 

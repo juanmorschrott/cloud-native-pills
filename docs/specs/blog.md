@@ -4,12 +4,12 @@
 
 ## Goal
 
-A blog of short Markdown "pills" (≤ 5 min read) to:
+A blog of short Markdown "pills" (≤ 5 min read) focused on Go, Kubernetes and observability (especially OpenTelemetry) to:
 
-- Learn, practice and stay up to date on a tech stack.
+- Learn, practice and stay up to date on topics from the CNCF ecosystem.
 - Promote myself on LinkedIn.
 
-Topics are suggested at random to push me out of my comfort zone. The author writes the posts.
+The author writes the posts in English and Spanish. The existing harness article is retained as an exception to the blog's topic focus.
 
 ## Requirements
 
@@ -20,9 +20,9 @@ Topics are suggested at random to push me out of my comfort zone. The author wri
 - Design: minimalist, digital, slightly retro. Source code must look great.
 - Accent color taken from a stack technology.
 
-## Stack covered
+## Topics covered
 
-AWS (networking, VPC, IAM, ECS, EC2, S3, ElastiCache, RDS, Secrets Manager, Lambda/API Gateway), observability (OpenTelemetry, CloudWatch), security (IAM, Secrets Manager, KMS), system design, CI/CD (GitHub Actions, OIDC/Keycloak), Terraform, Python (FastAPI). Go later.
+Go, Kubernetes and observability, with a special focus on OpenTelemetry.
 
 ## Decisions
 
